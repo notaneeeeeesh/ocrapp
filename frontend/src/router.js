@@ -13,10 +13,20 @@ const routes = [
     path: '/account/login',
     component: () => import('@/pages/Login.vue'),
   },
+  {
+    name: 'Docket',
+    path: '/docket',
+    component: () => import('@/pages/Docket.vue'),
+  },
+  {
+    name: 'EmiratesID',
+    path: '/emiratesid',
+    component: () => import('@/pages/EmiratesID.vue'),
+  },
 ]
 
 let router = createRouter({
-  history: createWebHistory('/frontend'),
+  history: createWebHistory('/'),
   routes,
 })
 
