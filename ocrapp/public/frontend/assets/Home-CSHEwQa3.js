@@ -1,0 +1,1 @@
+import{c as t,a as o,b as e,o as r}from"./index-BQUyCr_P.js";const c={__name:"Home",setup(l){return(n,a)=>(r(),t("div",null,a[0]||(a[0]=[o(" Home "),e("nav",null,[e("a",{href:"/emiratesid"},[e("p",null,"Emirates ID")]),e("a",{href:"/docket"},[e("p",null,"Docket")])],-1)])))}};export{c as default};

@@ -7,11 +7,11 @@ from google.cloud import documentai
 
 
 @frappe.whitelist()
-def getEid(str):
+def getDocket(str):
     # # # TODO(developer): Uncomment these variables before running the sample.
     # project_id = "agmc-reader-001"
     # location = "eu" # Format is "us" or "eu"
-    # processor_id = "39a97fc80b055d3a" # Create processor before running sample
+    # processor_id = "4162fa78942d7b48" # Create processor before running sample
     # # file_path = "/home/anish_i/test.png"
     # # mime_type = "image/png" # Refer to https://cloud.google.com/document-ai/docs/file-types for supported file types
     # # # field_mask = "text,entities,pages.pageNumber"  # Optional. The fields to return in the Document object.
@@ -21,7 +21,7 @@ def getEid(str):
     # print(mime_type)
     # # # You must set the `api_endpoint` if you use a location other than "us".
     # opts = ClientOptions(api_endpoint=f"{location}-documentai.googleapis.com")
-    # # #opts = ClientOptions(api_endpoint="https://eu-documentai.googleapis.com/v1/projects/31013434934/locations/eu/processors/39a97fc80b055d3a:process")
+    # # #opts = ClientOptions(api_endpoint="https://eu-documentai.googleapis.com/v1/projects/31013434934/locations/eu/processors/4162fa78942d7b48:process")
 
     # client = documentai.DocumentProcessorServiceClient(client_options=opts)
 
@@ -57,27 +57,18 @@ def getEid(str):
 
     # arr = []
     # for entity in result.document.entities:
-    #     arr.append(f'"{entity.type}":"{entity.mention_text}"')
+    #     value = entity.mention_text.replace("\n", "")
+    #     arr.append(f'"{entity.type}":"{value}"')
     # finalStr = '{' + ",".join(arr) + '}'
+    # print(finalStr)
     # data = json.loads(finalStr)
     # return data
     return {
-        "card_number": "124256387",
-        "date_expiry": "11/09/2024",
-        "date_issue": "09/09/2022",
-        "date_of_birth": "14/10/1974",
-        "employer_ar": "\u0627\u0644\u062a\u0642\u0646\u064a\u0627\u062a \u0627\u0644\u0647\u0646\u062f\u0633\u064a\u0629 \u0644\u0644\u062e\u062f\u0645\u0627\u062a",
-        "employer_en": "Engineering Tech. Services",
-        "full_name_ar": "\u0647\u064a\u0645\u064a\u0646\u062a\u064a\u0631\u0627 \u0641\u0648\u064a\u0646\u062a\u064a\u0633",
-        "full_name_en": "Dindo Hementera Fuentes",
-        "id": "784-1974-4642947-0",
-        "nationality_ar": "\u0627\u0644\u0641\u0644\u0628\u064a\u0646",
-        "nationality_en": "Philippines",
-        "occupation_ar": "\u0645\u0631\u0627\u0642\u0628 \u0627\u0644\u0645\u0628\u064a\u062f\u0627\u062a \u0627\u0644\u062d\u0634\u0631\u064a\u0629",
-        "occupation_en": "Pesticides Controller",
-        "place_of_issue_ar": "\u0627\u0644\u0634\u0627\u0631\u0642\u0629",
-        "place_of_issue_en": "Sharjah",
-        "scan_number": "2203826287"
-    }
-
-
+        "description":"Dove beltCheekbokenLocah Shegah",
+        "docket_no":"393732",
+        "make":"Camto",
+        "out_datetime":"2.3Ole.25",
+        "out_kms":"57132",
+        "out_to":"LAS",
+        "reg_no":"AD 53574"
+        }
